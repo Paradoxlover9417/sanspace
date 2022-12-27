@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script defer src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <section class="mainpage panel">
+                <header>
+                    <div class="innerHeader">
+                        <h1 class="logo"></h1>
+                        <ul class="gnb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="aboutme.html">About</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                        <div class="contact_button">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </header>
+                <div class="inner">
+                    <h1 class="ttl en">Sanha's <br />Webpublishing<span class="fullStop"></span><span class="sub_ttl ko">신입 웹퍼블리셔 포트폴리오</span></h1>
+                </div>
+            </section>
+            <section class="aboutMe">
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 200" preserveAspectRatio="none">
+                        <path fill="black" stroke="#1A1A1A" stroke-width="0" class="wobble" d="M 0 120 C 384 60, 1536 60, 1920  120," style="opacity: 1"></path>
+                    </svg>
+                </div>
+                <h2 class="ttl en">About me</h2>
+                <div class="content">
+                    <div class="personal_info">
+                        <div class="info ko">
+                            <p class="ttl">Webpublisher, <br />with Adaptability</p>
+                            <p><span>Name: </span>강산하</p>
+                            <p><span>Date of Birth: </span>1990년 11월 7일</p>
+                            <p><span>Education: </span></p>
+                            <p><span>2022.08 ~ 2023.01 </span>EZEN 아카데미 웹퍼블리셔 과정 수료</p>
+                            <p><span>2020.03 ~ 2022.06 </span>1800GOTJUNK? 회계담당 (호주)</p>
+                            <p><span>2014.01 ~ 2015.07 </span>BPP university college 회계전공 (영국)</p>
+                            <p><span>2009.03 ~ 2010.03 </span>경희대학교 정치외교학과 중퇴</p>
+                        </div>
+                        <button>More</button>
+                    </div>
+                    <div class="personal_traits">
+                        <ul>
+                            <li>
+                                <div class="icon">icon</div>
+                                <p class="ko">다양한 분야에 대한 호기심</p>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <p>끈기</p>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <p>자기주도학습능력</p>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <p>문제해결에 대한 강한 흥미</p>
+                            </li>
+                            <li>
+                                <div class="icon"></div>
+                                <p>영어 구사 가능</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="skills">
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 200" preserveAspectRatio="none">
+                        <path fill="black" stroke="#1A1A1A" stroke-width="0" class="wobble" d="M 0 120 C 384 60, 1536 60, 1920  120," style="opacity: 1"></path>
+                    </svg>
+                </div>
+                <h2 class="ttl en">
+                    Skills
+                    <span class="sub_ttl ko">다양한 기술에 대한 관심으로<br />프로젝트에 적합한 능력을 골라 적용할 수 있습니다.</span>
+                </h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="icon"></div>
+                            <p>Javascript</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon"></div>
+                            <p>SQL</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon"></div>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon"></div>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon"></div>
+                            <p>Illustrator</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="icon"></div>
+                            <p>Photoshop</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="detail">
+                    <li>
+                        <div class="percentage">
+                            <div class="circle">
+                                <p class="number">60%</p>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <div class="ttl">SQL</div>
+                            <p class="text"><span><img src="img/icon_tickbox.png" alt=""></span>SQL의 질의 문법을 이해하고 테이블을 생성할 수 있습니다.</p>
+                            <p class="text"><span><img src="img/icon_tickbox.png" alt=""></span>테이블 조인과 서브쿼리를 이해하고 기초적인 데이터 분석을 할 수 있습니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="gallery_intro">
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 200" preserveAspectRatio="none">
+                        <path fill="black" stroke="#1A1A1A" stroke-width="0" class="wobble" d="M 0 120 C 384 60, 1536 60, 1920  120," style="opacity: 1"></path>
+                    </svg>
+                </div>
+                <h2 class="ttl en">
+                    Gallery
+                    <span class="sub_ttl ko">웹 퍼블리싱, NCS 프로젝트 및 기타 개인 프로젝트를 보실 수 있습니다.</span>
+                </h2>
+                <div class="project">
+                    <h2 class="ttl en">Project<span>01.</span></h2>
+
+                    <!-- swiper project -->
+                    <div class="swiper project size">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div data-swiper-parallax-x="-50%"></div>
+                                <p class="img"><img src="img/clone_coding_thehada.png" alt="" /></p>
+                                <div class="desc">
+                                    <div class="ttl"><span></span>디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-swiper-parallax-x="-50%"></div>
+                                <p class="img"><img src="img/clone_coding_yuseong.png" alt="" /></p>
+                                <div class="desc">
+                                    <div class="ttl"><span></span>디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-swiper-parallax-x="-50%"></div>
+                                <p class="img"><img src="img/clone_coding_daebang.png" alt="" /></p>
+                                <div class="desc">
+                                    <div class="ttl"><span></span>디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <p class="img"></p>
+                                <div class="desc">
+                                    <div class="ttl">디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="img"></p>
+                                <div class="desc">
+                                    <div class="ttl">디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="img"></p>
+                                <div class="desc">
+                                    <div class="ttl">디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <h2 class="ttl en">NCS<span>02.</span></h2>
+                    <div class="swiper ncs size">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div data-swiper-parallax-y="50%"></div>
+                                <p class="img"></span><img src="img/슬라이드3.png" alt=""></p>
+                                <div class="desc">
+                                    <div class="ttl"><span></span>디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-swiper-parallax-y="50%"></div>
+                                <p class="img"><img src="img/슬라이드3.png" alt=""></p>
+                                <div class="desc">
+                                    <div class="ttl"><span></span>디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-swiper-parallax-y="50%"></div>
+                                <p class="img"><img src="img/슬라이드3.png" alt=""></p>
+                                <div class="desc">
+                                    <div class="ttl">디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-swiper-parallax-y="50%"></div>
+                                <p class="img"><img src="img/슬라이드3.png" alt=""></p>
+                                <div class="desc">
+                                    <div class="ttl">디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-swiper-parallax-y="100%"></div>
+                                <p class="img"><img src="img/슬라이드3.png" alt=""></p>
+                                <div class="desc">
+                                    <div class="ttl">디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div data-swiper-parallax-y="100%"></div>
+                                <p class="img"><img src="img/슬라이드3.png" alt=""></p>
+                                <div class="desc">
+                                    <div class="ttl">디자인 더하다</div>
+                                    <button>More</button>
+                                    <p class="text ko">오늘 가지고 있는 가치는 그 어떤것과 비교할 수 없을 정도로 소중합니다. 하지만 지금 이 자리에 머물고 있는 가치는 더 이상 성장할 수 없습니다. 우리는 오늘의 가치에 내일의 경험을 더하며 가치를 계속해서 높이고 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <button>기타 개인 프로젝트</button>
+            </section>
+            <section class="email">
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 200" preserveAspectRatio="none">
+                        <path fill="black" stroke="#1A1A1A" stroke-width="0" class="wobble" d="M 0 120 C 384 60, 1536 60, 1920  120," style="opacity: 1"></path>
+                    </svg>
+                </div>
+                <p class="ko">더 궁금한 점이 있으신가요? 메일을 보내주세요.</p>
+                <button>sanha.kang9417@gmail.com</button>
+            </section>
+            <footer>
+                <span class="line"></span>
+                <div class="inner">
+                    <h2 class="logo"></h2>
+                    <div class="pages">
+                        <h2 class="en">Pages</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Etc">
+                        <h2 class="en">Etc</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Github blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h2 class="en">Contact</h2>
+                        <ul>
+                            <li>
+                                <a href="#">sanha.kang9417@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href="#">+82 10 3021 1538</a>
+                            </li>
+                            <li>
+                                <a href="#">Located in Seoul, South Korea</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">Copyright 2022. All rights reserved</div>
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 200" preserveAspectRatio="none">
+                        <path fill="black" stroke="#1A1A1A" stroke-width="0" class="wobble" d="M 0 120 C 384 60, 1536 60, 1920  120," style="opacity: 1"></path>
+                    </svg>
+                </div>
+            </footer>
+        </div>
+        <script></script>
+    </body>
+</html>

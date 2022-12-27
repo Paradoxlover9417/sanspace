@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            :root {
+                --color: red;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .box {
+                width: 100%;
+                height: 1500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <div class="content">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" viewBox="0 0 400.06 899.63">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: none;
+                            stroke: #231f20;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                </defs>
+                <g id="Layer_1-2">
+                    <path
+                        class="cls-1"
+                        d="m327.21.5C53.84,39.43,2.25,81,.54,109.83c-2.73,46.17,120.33,97.47,181.33,117.33,126.1,41.06,210.91,20.71,217.33,46.67,7.84,31.7-116.56,70.52-265.33,205.33-102.66,93.03-99.21,125.1-97.33,134.67,3.9,19.9,20.47,42.11,233.33,149.33,60.56,30.51,98.94,48.72,98.67,74.67-.3,27.93-45.23,49.66-74.67,61.33"
+                    />
+                </g>
+            </svg> -->
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" viewBox="0 0 327.44 992.89">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: none;
+                            stroke-width: 100;
+                            stroke: rgb(131, 36, 255);
+                            stroke-miterlimit: 10;
+                            stroke-linecap: round;
+                        }
+                    </style>
+                </defs>
+                <g id="Layer_1-2">
+                    <path
+                        class="cls-1"
+                        d="m75.86.5c94.63,5.1,114.68,16.97,116,26.67,1.29,9.44-15.17,16.69-64,52-38.23,27.64-68.12,49.26-65.33,54.67,2.85,5.54,41.5-2.92,76-24C206.35,68.39,224.3-1.17,235.86,3.17c10.88,4.09-1.61,67.01-9.33,98.67-12.64,51.76-25.9,74.63-21.33,77.33,9.53,5.65,84.13-84.12,70.67-100-11.1-13.09-78.56,28.04-96,38.67-42.51,25.91-65.5,39.93-80,69.33-17.63,35.77-22.33,93.54,10.67,121.33,21.82,18.38,63.39,26.41,81.33,5.33,13.93-16.36,10.33-46.38-5.33-64-17.15-19.3-45.12-19.66-62.67-14.67-33.84,9.63-49.76,45.12-72,94.67-15.47,34.46-21.28,60.89-24,77.33-6.78,41.05-1.8,65.63,6.67,84,.59,1.29,7.27,15.61,10.67,14.67,7.64-2.13-20.77-76.1,5.33-97.33,17.03-13.85,49.64.94,53.33,2.67,7.32,3.42,23.51,12.42,64,74.67,17.39,26.73,22.29,37.21,26.67,36,8.79-2.43-1.62-47.41,5.33-118.67,3.13-32.07,5.15-52.79,10.67-53.33,11.97-1.17,41.65,92.54,16,110.67-11.63,8.21-23.67-6.84-49.33-4-46.2,5.11-90.85,63.15-81.33,105.33,2.88,12.77,10.38,22.53,18.67,33.33,8.53,11.11,21.97,28.62,44,36,21.74,7.29,30.31-2.51,41.33,5.33,19.3,13.73,20.57,63.33,0,77.33-21.57,14.68-52.09-20.03-104-6.67-1.24.32-25.51,6.73-25.33,14.67.21,9.11,32.37,8.95,64,34.67,11.58,9.42,23.06,18.75,21.33,26.67-5.65,25.86-143.86-2.04-154.67,29.33-6.99,20.29,39.73,64.1,92,72,50.39,7.62,102.38-18.67,101.33-34.67-.96-14.72-46.37-13.2-50.67-33.33-5.1-23.91,49.63-69.44,82.67-57.33,33.52,12.29,40.03,82.23,21.33,128-6.64,16.25-20.51,39.38-26.67,37.33-8.81-2.93-15.18-61.85,20-81.33,26.84-14.87,61.85,2.1,76,22.67,20.97,30.49,8.5,86.92-41.33,126.67"
+                    />
+                </g>
+            </svg>
+        </div>
+        <div class="box"></div>
+        <script>
+            let content = document.querySelector(".content");
+            let line = document.querySelector(".cls-1");
+
+            let pathLength = line.getTotalLength();
+
+            line.style.strokeDasharray = pathLength;
+            line.style.strokeDashoffset = pathLength;
+
+            window.addEventListener("scroll", scrollHandler);
+            function calcDashoffset(y, element, length) {
+                const ratio = (y - element.offsetTop) / element.offsetHeight;
+                const value = length - length * ratio;
+                return value < 0 ? 0 : value > length ? length : value;
+            }
+            function scrollHandler() {
+                const scrollY = window.scrollY + window.innerHeight * 0.8;
+
+                line.style.strokeDashoffset = calcDashoffset(scrollY, content, pathLength);
+            }
+        </script>
+
+    </body>
+</html>
